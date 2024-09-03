@@ -13,7 +13,8 @@ public class Course {
     private Long id;
 
     private String courseName;
-    private Boolean courseIsActive;
+    private Boolean courseIsActive=true;
+    private String description;
     private LocalDateTime createdAt = LocalDateTime.now();
 
     private LocalDateTime updatedAt;
