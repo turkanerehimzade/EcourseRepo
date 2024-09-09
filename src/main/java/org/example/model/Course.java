@@ -19,5 +19,5 @@ public class Course {
 
     private LocalDateTime updatedAt;
 
-    private Set<Student> students = new HashSet<>();
+//    private Set<Student> students = new HashSet<>();
 }

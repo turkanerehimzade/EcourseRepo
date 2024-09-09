@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.repository.CourseRepository;
+import org.example.repository.CourseStudentRepository;
 import org.example.repository.StudentRepository;
 
 import java.util.Scanner;
@@ -13,7 +14,8 @@ public class Menu {
             "5.Read course\n" +
             "6.Create course\n" +
             "7.Delete course\n" +
-            "8.Update course";
+            "8.Update course\n"+
+            "9.Read course by student";
 
     public static void menu() {
         Scanner scanner = new Scanner(System.in);
@@ -48,6 +50,8 @@ public class Menu {
                 case 8:
                     CourseRepository.updateCourseById();
                     break;
+                case 9:
+                    CourseStudentRepository.getCourseByStudentId();break;
                 default:
                     System.out.println("Not found");
             }

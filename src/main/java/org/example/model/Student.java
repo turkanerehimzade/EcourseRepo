@@ -18,5 +18,5 @@ public class Student {
     private Boolean studentIsActive = true;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private Set<Course> courses = new HashSet<>();
+//    private Set<Course> courses = new HashSet<>();
 }
